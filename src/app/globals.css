@@ -1,0 +1,31 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Protest+Strike&display=swap');
+
+/* Tailwind CSS base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define font variables in :root */
+:root {
+  --font-noto-serif: 'Noto Serif', serif;
+  --font-protest-strike: 'Protest Strike', sans-serif;
+}
+
+/* Set the default body styles */
+body {
+  background-color: white; /* Change if you want a different background color */
+  font-family: var(--font-noto-serif); /* Default font set to Noto Serif */
+  margin: 0;
+  padding: 0;
+}
+
+/* Utility class to apply Protest Strike font when needed */
+.font-protest-strike {
+  font-family: var(--font-protest-strike);
+}
+
+/* Any additional custom global styles */
+* {
+  box-sizing: border-box;
+}
