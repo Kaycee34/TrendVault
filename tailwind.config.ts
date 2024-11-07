@@ -1,5 +1,3 @@
-import type { Config } from "tailwindcss";
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -24,6 +22,15 @@ const config: Config = {
         '128': '32rem',
         '200': '40rem',
         '400': '90rem',
+      },
+      animation: {
+        bounceSlow: 'bounceSlow 2s infinite',
+      },
+      keyframes: {
+        bounceSlow: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
       },
     },
   },

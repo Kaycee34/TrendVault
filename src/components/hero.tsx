@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import img from '../assets/images/heroImg.png';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -14,9 +15,11 @@ const Hero = () => {
         <p className='text-xl md:text-xl text-gray-300 font-sans'>
           Discover the latest trends in fashion at unbeatable prices. Elevate your wardrobe today!
         </p>
+        <Link href="/Shop">
         <button className='mt-6 bg-customBlue hover:bg-blue-700 hover:scale-105 transition-transform duration-300 text-white font-semibold py-3 px-6 rounded-lg shadow-md animate-bounce glow-effect'>
           Shop Now
         </button>
+        </Link>
       </div>
 
       {/* Image Section with subtle float */}
@@ -26,7 +29,7 @@ const Hero = () => {
           alt="heroimg"
           width={500}
           height={300}
-          className='rounded-lg transform hover:scale-105 transition-transform duration-500 bg-transparent animate-float'
+          className=''
         />
       </div>
 

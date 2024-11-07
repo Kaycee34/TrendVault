@@ -3,9 +3,7 @@ import Products from "@/components/products/products";
 const Shop = () => {
   return (
     <div>
-      <header>
-        <h1 className="text-white">shop</h1>
-      </header>
+        <h1 className="text-white text-5xl mt-32">shop</h1>
       <Products />
     </div>
   );

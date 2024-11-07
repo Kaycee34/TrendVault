@@ -4,6 +4,7 @@ import bag from "@/assets/images/bags.jpg";
 import shirt from "@/assets/images/shirt.jpg";
 import shoe from "@/assets/images/shoes.jpg";
 import watch from "@/assets/images/watch.jpg";
+import Footer from "./footer";
 
 const Categories = () => {
   const categoriesData = [

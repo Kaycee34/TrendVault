@@ -6,7 +6,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
+import { faBarsStaggered, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -39,6 +39,17 @@ const mobileNav = () => {
               {link.name}
             </Link>
           ))}
+
+    <div className="flex justify-center items-center gap-8 w-24 h-10 bg-black border-2 border-blue-500 p-2 rounded-full">
+      <FontAwesomeIcon
+          icon={faUser}
+          className="text-white text-2xl lg:hidden"
+        />
+      <FontAwesomeIcon
+          icon={faShoppingCart}
+          className="text-white text-2xl lg:hidden"
+        />
+        </div>
         </nav>
       </SheetContent>
     </Sheet>
